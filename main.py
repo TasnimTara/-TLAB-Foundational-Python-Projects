@@ -1,6 +1,12 @@
 import sys
 
+message1 = "hello world"
+new_message = " "
 
+count = 0
+for l in message1:
+    if l == ""
+        count += 1
 def encrypt(message, k):
     return
 
@@ -23,4 +29,3 @@ if __name__ == "__main__":
 
     print("Your encrypted word is", encrypted)
     print("Your decrypted word is", decrypted)
-    
