@@ -1,15 +1,32 @@
-import sys
+import sys 
 
-word = "hello world"
-new_word = " "
+first_numeral = ord("A") 
+last_numeral = ord("Z")
+
+cesear_code = last_numeral - first_numeral + 1
+
+
 
 def encrypt(word, k):
+    result = ""
     # for each letter in our message
         #encrypt
-    for l in word:
+    for l in first_numeral:
         val = ord(l) + key 
+        #the ord function returns the unicode of a character
         result = chr(value)
+        print(cesear_code)
         print(result)
+return 
+
+def encrypt(word, k):
+    result = ""
+    # for each result in our message 
+
+    for l in word:
+        print("ASCII value before", ord(1))
+        val = ord(1) + k
+        print("ASCII value", val)
     return
 
 
@@ -30,4 +47,5 @@ if __name__ == "__main__":
     decrypted = decrypt(encrypted, key)
 
     print("Your encrypted word is", encrypted)
+
     print("Your decrypted word is", decrypted)
