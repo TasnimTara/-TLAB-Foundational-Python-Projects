@@ -12,7 +12,7 @@ def encrypt(word, k):
     # for each letter in our message
         #encrypt
     for l in first_numeral:
-        val = ord(l) + key 
+        value = ord(l) + key 
         #the ord function returns the unicode of a character
         result = chr(value)
         print(cesear_code)
@@ -25,8 +25,8 @@ def encrypt(word, k):
 
     for l in word:
         print("ASCII value before", ord(1))
-        val = ord(1) + k
-        print("ASCII value", val)
+        value = ord(1) + k
+        print("ASCII value", value)
     return
 
 
