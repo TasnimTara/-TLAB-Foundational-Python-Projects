@@ -3,22 +3,28 @@ import sys
 first_numeral = ord("A") 
 last_numeral = ord("Z")
 
-cesear_code = last_numeral - first_numeral + 1
-
-
 
 def encrypt(word, k):
-    result = ""
-    # for each letter in our message
-        #encrypt
-    for l in first_numeral:
-        value = ord(l) + key 
-        #the ord function returns the unicode of a character
-        result = chr(value)
-        print(cesear_code)
-        print(result)
-return 
-
+ # Loop through each character in the word
+    for char in word:
+        # Check if the character is an alphabet letter
+            if char.isalpha():
+            # Shift the character by 'key' positions
+            shift = ord(char) + key
+            # If the shifted character goes beyond the alphabet (for lowercase letters)
+            if char.islower() and shift > ord('z'):
+                shift -= 26
+            # If the shifted character goes beyond the alphabet (for uppercase letters)
+            elif char.isupper() and shift > ord('Z'):
+                shift -= 26
+            # Convert the shifted character back to a string and add it to the result
+            result += chr(shift)
+        else:
+            # If the character is not an alphabet letter, add it to the result without changing
+            result += char
+    # Return the encrypted word
+    return result
+    
 def encrypt(word, k):
     result = ""
     # for each result in our message 
